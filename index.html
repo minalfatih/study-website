@@ -6,6 +6,9 @@
   <meta name="description"
     content="تطبيق تدريبي يقدم اختبارات تجريبية تحاكي الواقع للطلاب في السعودية - بكل سهولة وفعالية." />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./dist/aos.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -55,7 +58,7 @@
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggler navigation">
             <div class="position-relative">
-              <img class="position-absolute top-0 end-0 hamburger" src="./images/icon-hamburger.svg"
+              <img class="hamburger" src="./images/icon-hamburger.svg"
                 alt="icon-hamburger" />
               <img class="position-absolute top-0 end-0 close" src="./images/icon-close.svg" alt="icon-close" />
             </div>
@@ -90,9 +93,9 @@
       </nav>
     </header>
 
-    <section class="landing mt-5 mb-5" id="home">
+    <section class="landing mt-5 mb-5 pt-5 pt-xl-0" id="home">
       <div class="container">
-        <div class="row justify-content-around align-items-center flex-column-reverse gap-md-5 pe-0 flex-lg-row">
+        <div class="row justify-content-between align-items-center flex-column-reverse gap-md-5 pe-0 flex-lg-row">
           <div class="info col-md-12 col-lg-5 mt-2 mb-5 mt-lg-0 mb-lg-0 text-center text-lg-end aos-init" data-aos="fade-up">
             <h1>
               استعد للاختبار... <br />
@@ -118,10 +121,10 @@
       </div>
     </section>
 
-    <section class="feature mt-5 mb-5" id="features">
-      <div class="container d-flex justify-content-center align-items-center flex-column text-center pt-5 pb-5">
+    <section class="feature mt-5 mb-5 pt-5 pb-5" id="features">
+      <div class="container d-flex justify-content-between align-items-center flex-column text-center pt-5 pb-5">
         <div class="main-title">
-          <h1 class="mb-5 aos-init" data-aos="fade-up">كل ما تحتاجه في تطبيق واحد</h1>
+          <h1 class="mb-5 pb-4 aos-init" data-aos="fade-up">كل ما تحتاجه في تطبيق واحد</h1>
         </div>
         <div class="row justify-content-between gap-4 gap-xl-0">
           <div class="box col-12 col-md-3 text-center text-xl-end aos-init" data-aos="fade-up">
@@ -164,7 +167,7 @@
               نفهم التحديات الدراسية فصممنا تجربة تساعدك على التفوق بثقة.
             </p>
           </div>
-          <ul class="list-unstyled d-flex flex-column gap-4">
+          <ul class="list-unstyled d-flex flex-column gap-5 gap-xl-4">
             <li
               class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row align-items-center aos-init" data-aos="fade-up">
               <div class="image">
@@ -291,7 +294,7 @@
               </li>
             </ul>
           </div>
-          <nav class="navbar w-100 aos-init" data-aos="fade-up">
+          <nav class="navbar aos-init" data-aos="fade-up">
             <ul
               class="navbar-collapse p-0 m-0 list-unstyled d-flex justify-content-center align-items-center flex-column flex-md-row gap-4 gap-md-5">
               <li class="nav-item">
@@ -354,5 +357,4 @@
   <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
