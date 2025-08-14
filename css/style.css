@@ -9,6 +9,7 @@ html {
 
 body {
   position: relative;
+  font-family: Arial;
 }
 
 header nav button {
@@ -16,17 +17,22 @@ header nav button {
   margin-left: 15px;
 }
 
-.logo span {
-  font-weight: bold;
-  font-size: 1.5rem;
+.logo svg {
+  width: 70px;
+  height: 70px;
+}
+
+header .logo svg.active path {
+  fill: #fff;
 }
 
 header .logo span {
   color: var(--blue);
 }
 
-footer .logo {
-  color: white;
+footer .logo svg {
+  width: 100px;
+  height: 100px;
 }
 
 header nav .navbar-nav .nav-item .nav-link {
@@ -125,6 +131,7 @@ header nav .download-btn a:hover {
 section .info h1 {
   color: var(--blue);
   font-size: 50px;
+  font-weight: 700;
 }
 
 @media (max-width: 990px) {
@@ -171,7 +178,7 @@ section .info p {
     width: 50%;
   }
 
-  .students>.image img {
+  .students > .image img {
     width: 60%;
   }
 
