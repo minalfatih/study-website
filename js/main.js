@@ -3,6 +3,7 @@ let menuBtn = document.querySelector(".navbar-toggler");
 menuBtn.onclick = function () {
   this.classList.toggle("active");
   if (this.classList.contains("active")) {
+    document.querySelector("header svg").classList.add("active")
     let overlay = document.createElement("div");
     overlay.className = "overlay";
     document.body.appendChild(overlay);
@@ -20,6 +21,7 @@ menuBtn.onclick = function () {
     setTimeout(() => {
       document.querySelector("header .navbar").classList.remove("active");
       document.querySelector(".overlay").remove();
+      document.querySelector("header svg").classList.remove("active")
     }, 500);
   }
 };
