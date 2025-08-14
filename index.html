@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="تطبيق تدريبي يقدم اختبارات تجريبية تحاكي الواقع للطلاب في السعودية - بكل سهولة وفعالية." />
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" /> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg" />
+  <link rel="stylesheet" href="./dist/aos.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <title>تدريبي</title>
@@ -14,11 +14,43 @@
 
 <body>
   <main>
-    <header class="p-3 p-md-5 ps-0 pe-0">
+    <header class="p-3 p-md-5 pt-0 ps-0 pe-0">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="logo">
-            <span>تدريبي</span>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="1024.000000pt" height="1536.000000pt" viewBox="0 0 1024.000000 1536.000000"
+             preserveAspectRatio="xMidYMid meet">
+            
+            <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+            fill="#000000" stroke="none">
+            <path d="M5035 11562 c-38 -22 -176 -101 -305 -177 -129 -76 -440 -257 -690
+            -403 -521 -304 -1105 -645 -1830 -1072 -278 -163 -578 -338 -668 -389 -124
+            -71 -164 -99 -168 -117 -14 -57 -3 -67 216 -199 l210 -126 0 -694 0 -693 -24
+            -29 c-13 -15 -35 -46 -50 -67 l-26 -39 0 -344 c0 -378 3 -398 59 -427 23 -12
+            63 -16 173 -16 125 0 147 3 172 19 55 37 55 37 56 421 l0 355 -55 69 -55 69 0
+            608 c0 335 3 609 7 609 3 0 27 -12 52 -27 84 -48 1785 -1064 2390 -1427 435
+            -261 602 -356 624 -356 22 0 196 99 646 367 1468 875 2304 1372 2802 1667 146
+            86 276 166 288 177 23 22 28 66 9 91 -7 9 -173 111 -368 226 -195 114 -616
+            363 -935 552 -319 189 -606 358 -637 377 -31 18 -68 33 -83 33 -26 0 -234
+            -118 -960 -545 -137 -81 -450 -264 -695 -407 -472 -276 -510 -300 -510 -324 0
+            -17 3 -19 470 -294 201 -119 366 -210 380 -210 23 0 148 72 878 507 l293 175
+            139 -84 c77 -46 138 -87 136 -93 -1 -5 -160 -104 -352 -219 -873 -521 -1478
+            -879 -1493 -883 -10 -3 -340 188 -812 469 -436 260 -863 514 -946 563 -84 50
+            -153 92 -153 95 0 3 33 24 73 47 39 22 155 90 257 150 102 60 460 270 795 468
+            1696 997 1700 999 1703 1027 3 24 -8 33 -130 106 -443 263 -758 442 -784 447
+            -22 4 -46 -4 -99 -33z"/>
+            <path d="M2530 8171 c-7 -13 -10 -288 -10 -823 0 -760 1 -805 18 -838 15 -28
+            61 -62 228 -166 1520 -953 2323 -1449 2351 -1452 35 -4 3 -24 1178 708 209
+            131 603 375 875 545 272 169 506 317 519 329 52 47 51 26 51 884 0 781 0 799
+            -20 817 -12 11 -27 15 -43 11 -40 -10 -690 -404 -719 -437 l-28 -29 0 -349 c0
+            -318 -2 -351 -18 -368 -9 -11 -73 -54 -142 -95 -69 -42 -287 -174 -485 -295
+            -198 -121 -534 -326 -748 -457 -213 -130 -398 -236 -410 -236 -28 0 -2 -16
+            -952 569 -440 271 -810 503 -822 517 -23 25 -23 27 -23 360 0 270 -3 340 -14
+            362 -10 19 -89 72 -253 172 -347 211 -485 290 -505 290 -9 0 -22 -9 -28 -19z"/>
+            </g>
+            
+            </svg>
           </div>
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
             data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggler navigation">
@@ -52,7 +84,7 @@
           </div>
 
           <div class="download-btn">
-            <a href="#">تنزيل التطبيق</a>
+            <a href="https://play.google.com/store/apps/details?id=app.goatedu.www">تنزيل التطبيق</a>
           </div>
         </div>
       </nav>
@@ -61,22 +93,22 @@
     <section class="landing mt-5 mb-5" id="home">
       <div class="container">
         <div class="row justify-content-around align-items-center flex-column-reverse gap-md-5 pe-0 flex-lg-row">
-          <div class="info col-md-12 col-lg-5 mt-2 mb-5 mt-lg-0 mb-lg-0 text-center text-lg-end">
+          <div class="info col-md-12 col-lg-5 mt-2 mb-5 mt-lg-0 mb-lg-0 text-center text-lg-end aos-init" data-aos="fade-up">
             <h1>
               استعد للاختبار... <br />
               من جوالك
             </h1>
-            <p class="mt-4 mb-4">
+            <p class="mt-4 mb-5">
               تطبيق تدريبي يقدم اختبارات تجريبية تحاكي الواقع للطلاب في
               السعودية - بكل سهولة وفعالية.
             </p>
             <div class="btns d-flex gap-3 flex-column flex-xl-row">
-              <div class="google-play-btn">
+              <a href="https://play.google.com/store/apps/details?id=app.goatedu.www" class="google-play-btn">
                 <img src="./images/play.png" alt="google-play-link">
-              </div>
-              <div class="app-store-btn">
+              </a>
+              <a href="" class="app-store-btn">
                 <img src="./images/store.png" alt="app-store-link">
-              </div>
+              </a>
             </div>
           </div>
           <div class="image col-md-12 col-lg-6">
@@ -89,10 +121,10 @@
     <section class="feature mt-5 mb-5" id="features">
       <div class="container d-flex justify-content-center align-items-center flex-column text-center pt-5 pb-5">
         <div class="main-title">
-          <h1 class="mb-5">كل ما تحتاجه في تطبيق واحد</h1>
+          <h1 class="mb-5 aos-init" data-aos="fade-up">كل ما تحتاجه في تطبيق واحد</h1>
         </div>
         <div class="row justify-content-between gap-4 gap-xl-0">
-          <div class="box col-12 col-md-3 text-center text-xl-end">
+          <div class="box col-12 col-md-3 text-center text-xl-end aos-init" data-aos="fade-up">
             <div class="image">
               <img src="./images/icon3.png" alt="icon">
             </div>
@@ -101,7 +133,7 @@
               <p>راجع المفاهيم الصعبة من خلال مقاطع فديو قصيرة وواضحة.</p>
             </div>
           </div>
-          <div class="box col-12 col-md-3 text-center text-xl-end">
+          <div class="box col-12 col-md-3 text-center text-xl-end aos-init" data-aos="fade-up">
             <div class="image">
               <img src="./images/icon1.png" alt="icon">
             </div>
@@ -110,7 +142,7 @@
               <p>ابدأ المذاكرة فورا بدون اعدادات معقدة أوتسجيل طويل.</p>
             </div>
           </div>
-          <div class="box col-12 col-md-3 text-center text-xl-end">
+          <div class="box col-12 col-md-3 text-center text-xl-end aos-init" data-aos="fade-up">
             <div class="image">
               <img src="./images/icon2.png" alt="icon">
             </div>
@@ -126,15 +158,15 @@
     <section class="students pt-5 pb-5" id="student">
       <div class="container d-flex  justify-content-between align-items-center flex-column-reverse flex-xl-row">
         <div class="row text-center text-xl-end mt-5 mt-xl-0">
-          <div class=" info">
-            <h1>مصمم لك... كطالب سعودي</h1>
+          <div class=" info aos-init" data-aos="fade-up">
+            <h1 class="mb-4">مصمم لك... كطالب سعودي</h1>
             <p class="mb-5">
               نفهم التحديات الدراسية فصممنا تجربة تساعدك على التفوق بثقة.
             </p>
           </div>
           <ul class="list-unstyled d-flex flex-column gap-4">
             <li
-              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row align-items-center">
+              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row align-items-center aos-init" data-aos="fade-up">
               <div class="image">
                 <img src="./images/Frame1.png" alt="Frame" />
               </div>
@@ -144,7 +176,7 @@
               </div>
             </li>
             <li
-              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row  align-items-center">
+              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row  align-items-center aos-init" data-aos="fade-up">
               <div class="image">
                 <img src="./images/Frame2.png" alt="Frame" />
               </div>
@@ -154,7 +186,7 @@
               </div>
             </li>
             <li
-              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row  align-items-center">
+              class="d-flex justify-content-center justify-content-xl-start gap-3 flex-column flex-xl-row  align-items-center aos-init" data-aos="fade-up">
               <div class="image">
                 <img src="./images/Frame3.png" alt="Frame" />
               </div>
@@ -165,7 +197,7 @@
             </li>
           </ul>
         </div>
-        <div class="image col-md-12 col-lg-6 text-center text-xl-end">
+        <div class="image col-md-12 col-lg-6 text-center text-xl-end aos-init" data-aos="fade-up">
           <img class="img-fluid" src="./images/img3.png" alt="illustration" />
         </div>
       </div>
@@ -173,7 +205,7 @@
 
     <section class="analysis pt-5 pb-5" id="analysis">
       <div class="container d-flex justify-content-between align-items-center flex-column flex-xl-row">
-        <div class="info text-center text-xl-end">
+        <div class="info text-center text-xl-end aos-init" data-aos="fade-up">
           <h1>
             حلل مستواك... <br />
             طور نقاط ضعفك
@@ -183,7 +215,7 @@
             - عشان تذاكر بذكاء.
           </p>
         </div>
-        <div class="image col-md-12 col-lg-6">
+        <div class="image col-md-12 col-lg-6 aos-init" data-aos="fade-up">
           <img class="img-fluid" src="./images/img4.png" alt="illustration" />
         </div>
       </div>
@@ -191,10 +223,10 @@
 
     <section class="about mb-5 pb-5" id="about">
       <div class="container d-flex justify-content-between align-items-center flex-column-reverse flex-xl-row">
-        <div class="image col-md-12 col-lg-6">
+        <div class="image col-md-12 col-lg-6 aos-init" data-aos="fade-up">
           <img class="img-fluid" src="./images/img5.png" alt="illustration" />
         </div>
-        <div class="info text-center text-xl-end">
+        <div class="info text-center text-xl-end aos-init" data-aos="fade-up">
           <h1>تدرّب قبل ما تختبر</h1>
           <p class="mt-4 mb-4">
             أسئلة تحاكي شكل وتنسيق الاختبارات النهائية الحقيقية. تساعدك تتأقلم
@@ -206,22 +238,22 @@
 
     <section class="download pb-5 mb-5" id="download">
       <div class="container d-flex justify-content-between align-items-center flex-column-reverse flex-xl-row">
-        <div class="image col-md-12 col-lg-6 text-center text-xl-end">
+        <div class="image col-md-12 col-lg-6 text-center text-xl-end aos-init" data-aos="fade-up">
           <img class="img-fluid" src="./images/img2.png" alt="illustration" />
         </div>
-        <div class="info text-center text-xl-end mb-5 pb-2 mt-xl-0">
-          <h1>التطبيق متاح الان!</h1>
-          <p class="mt-4 mb-4">
+        <div class="info text-center text-xl-end mb-5 pb-2 mt-xl-0 aos-init" data-aos="fade-up">
+          <h1 class="mb-4">التطبيق متاح الان!</h1>
+          <p class="mt-4 mb-5">
             أسئلة تحاكي شكل وتنسيق الاختبارات النهائية الحقيقية. تساعدك تتأقلم
             وتثق بنفسك.
           </p>
           <div class="btns d-flex gap-3 flex-column flex-xl-row">
-            <div class="google-play-btn">
+            <a href="https://play.google.com/store/apps/details?id=app.goatedu.www" class="google-play-btn">
               <img src="./images/play.png" alt="google-play-link">
-            </div>
-            <div class="app-store-btn">
+            </a>
+            <a href="" class="app-store-btn">
               <img src="./images/store.png" alt="app-store-link">
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -229,7 +261,7 @@
 
     <footer class="pt-5 pb-5 pt-md-4 pb-md-4" id="contact">
       <div class="container pt-5 pb-5">
-        <div class="info text-center">
+        <div class="info text-center aos-init" data-aos="fade-up">
           <h1 class="mb-4">
             هل عندك سؤال؟
             <br />
@@ -241,12 +273,12 @@
           </p>
         </div>
 
-        <div class="content-btn d-flex justify-content-center align-items-center text-center gap-4 flex-column mb-5">
+        <div class="content-btn d-flex justify-content-center align-items-center text-center gap-4 flex-column mb-5 aos-init" data-aos="fade-up">
           <a href="#">تواصل معنا</a>
           <p>&copy; جميع الحقوق محفوظة لدى تدريبي</p>
         </div>
         <div class="d-flex justify-content-between align-items-center gap-4 gap-md-5 flex-column-reverse flex-md-row">
-          <div class="social-links">
+          <div class="social-links aos-init" data-aos="fade-up">
             <ul class="list-unstyled p-0 m-0 d-flex gap-3">
               <li>
                 <a href="#"><img src="./images/linkedin.svg" alt="linkedin"></a>
@@ -259,7 +291,7 @@
               </li>
             </ul>
           </div>
-          <nav class="navbar w-100">
+          <nav class="navbar w-100 aos-init" data-aos="fade-up">
             <ul
               class="navbar-collapse p-0 m-0 list-unstyled d-flex justify-content-center align-items-center flex-column flex-md-row gap-4 gap-md-5">
               <li class="nav-item">
@@ -274,12 +306,50 @@
             </ul>
           </nav>
           <div class="logo">
-            <span>تدريبي</span>
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="1024.000000pt" height="1536.000000pt" viewBox="0 0 1024.000000 1536.000000"
+             preserveAspectRatio="xMidYMid meet">
+            
+            <g transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)"
+            fill="#ffffff" stroke="none">
+            <path d="M5035 11562 c-38 -22 -176 -101 -305 -177 -129 -76 -440 -257 -690
+            -403 -521 -304 -1105 -645 -1830 -1072 -278 -163 -578 -338 -668 -389 -124
+            -71 -164 -99 -168 -117 -14 -57 -3 -67 216 -199 l210 -126 0 -694 0 -693 -24
+            -29 c-13 -15 -35 -46 -50 -67 l-26 -39 0 -344 c0 -378 3 -398 59 -427 23 -12
+            63 -16 173 -16 125 0 147 3 172 19 55 37 55 37 56 421 l0 355 -55 69 -55 69 0
+            608 c0 335 3 609 7 609 3 0 27 -12 52 -27 84 -48 1785 -1064 2390 -1427 435
+            -261 602 -356 624 -356 22 0 196 99 646 367 1468 875 2304 1372 2802 1667 146
+            86 276 166 288 177 23 22 28 66 9 91 -7 9 -173 111 -368 226 -195 114 -616
+            363 -935 552 -319 189 -606 358 -637 377 -31 18 -68 33 -83 33 -26 0 -234
+            -118 -960 -545 -137 -81 -450 -264 -695 -407 -472 -276 -510 -300 -510 -324 0
+            -17 3 -19 470 -294 201 -119 366 -210 380 -210 23 0 148 72 878 507 l293 175
+            139 -84 c77 -46 138 -87 136 -93 -1 -5 -160 -104 -352 -219 -873 -521 -1478
+            -879 -1493 -883 -10 -3 -340 188 -812 469 -436 260 -863 514 -946 563 -84 50
+            -153 92 -153 95 0 3 33 24 73 47 39 22 155 90 257 150 102 60 460 270 795 468
+            1696 997 1700 999 1703 1027 3 24 -8 33 -130 106 -443 263 -758 442 -784 447
+            -22 4 -46 -4 -99 -33z"/>
+            <path d="M2530 8171 c-7 -13 -10 -288 -10 -823 0 -760 1 -805 18 -838 15 -28
+            61 -62 228 -166 1520 -953 2323 -1449 2351 -1452 35 -4 3 -24 1178 708 209
+            131 603 375 875 545 272 169 506 317 519 329 52 47 51 26 51 884 0 781 0 799
+            -20 817 -12 11 -27 15 -43 11 -40 -10 -690 -404 -719 -437 l-28 -29 0 -349 c0
+            -318 -2 -351 -18 -368 -9 -11 -73 -54 -142 -95 -69 -42 -287 -174 -485 -295
+            -198 -121 -534 -326 -748 -457 -213 -130 -398 -236 -410 -236 -28 0 -2 -16
+            -952 569 -440 271 -810 503 -822 517 -23 25 -23 27 -23 360 0 270 -3 340 -14
+            362 -10 19 -89 72 -253 172 -347 211 -485 290 -505 290 -9 0 -22 -9 -28 -19z"/>
+            </g>
+            
+            </svg>
           </div>
         </div>
       </div>
     </footer>
   </main>
+    <script src="./dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
