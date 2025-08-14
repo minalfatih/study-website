@@ -9,7 +9,7 @@ html {
 
 body {
   position: relative;
-  font-family: Arial;
+  font-family: "DM Sans", sans-serif;
 }
 
 header nav button {
@@ -18,21 +18,18 @@ header nav button {
 }
 
 .logo svg {
-  width: 70px;
-  height: 70px;
+  width: 150px;
+  height: 130px;
+  position: relative;
+  right: -20%;
+}
+
+.navbar-toggler img {
+  width: 30px;
 }
 
 header .logo svg.active path {
   fill: #fff;
-}
-
-header .logo span {
-  color: var(--blue);
-}
-
-footer .logo svg {
-  width: 100px;
-  height: 100px;
 }
 
 header nav .navbar-nav .nav-item .nav-link {
@@ -156,6 +153,10 @@ section .info p {
   color: #f9fafb !important;
 }
 
+.feature h1 {
+  font-weight: 700;
+}
+
 .feature h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -197,8 +198,14 @@ footer {
   color: #f9fafb;
 }
 
-footer .logo svg {
+footer h1 {
+  font-weight: 700;
+}
+
+footer .logo {
   width: 150px;
+  position: relative;
+  right: 7.5%;
 }
 
 footer .content-btn a {
@@ -242,5 +249,5 @@ footer .social-linls svg path:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(229deg 31% 21% / 80%);
+  background-color: hsl(229deg 31% 21% / 90%);
 }
