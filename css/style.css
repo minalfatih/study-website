@@ -1,0 +1,239 @@
+:root {
+  --blue: #0066ff;
+  --black: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+header nav button {
+  margin-bottom: 12px;
+  margin-left: 15px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header .logo span {
+  color: var(--blue);
+}
+
+footer .logo {
+  color: white;
+}
+
+header nav .navbar-nav .nav-item .nav-link {
+  color: var(--black);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #FFA800;
+  transition: 0.3s linear;
+}
+
+header nav .download-btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  width: 150px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+header nav .download-btn a:hover {
+  background-color: white;
+  color: var(--blue);
+}
+
+@media (max-width: 1200px) {
+  header nav .download-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  header .navbar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  header .navbar .container {
+    gap: 20px;
+  }
+
+  header button.active div .hamburger {
+    opacity: 0;
+  }
+
+  header button div .close {
+    opacity: 0;
+  }
+
+  header button.active div .close {
+    opacity: 1;
+  }
+
+  header nav .navbar-nav {
+    text-align: center;
+  }
+
+  header nav .navbar-nav .nav-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  header nav .navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+  }
+
+  header nav .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+
+  header nav .navbar-nav .nav-item .nav-link:hover {
+    color: #FFA800;
+    font-weight: bold;
+  }
+
+  header nav .navbar-nav .nav-item:last-child .nav-link {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    margin-top: 10px;
+  }
+}
+
+section .info h1 {
+  color: var(--blue);
+  font-size: 50px;
+}
+
+@media (max-width: 990px) {
+  section .info h1 {
+    font-size: 30px;
+  }
+}
+
+section .info p {
+  color: var(--black);
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.feature {
+  background-color: var(--blue);
+  color: #f9fafb;
+}
+
+.feature h1,
+.feature p {
+  color: #f9fafb !important;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.feature .box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.students ul li div h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 990px) {
+  .download img {
+    width: 50%;
+  }
+
+  .students>.image img {
+    width: 60%;
+  }
+
+  .feature .box {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+.btns img {
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--blue);
+  color: #f9fafb;
+}
+
+footer .logo svg {
+  width: 150px;
+}
+
+footer .content-btn a {
+  display: block;
+  background-color: #FFA800;
+  color: white;
+  border: 1px solid #FFA800;
+  text-decoration: none;
+  padding: 15px;
+  width: 150px;
+  border-radius: 6px;
+  transition: .3s linear;
+}
+
+footer .content-btn a:hover {
+  color: #FFA800;
+  background-color: white;
+}
+
+footer .navbar .navbar-collapse .nav-item .nav-link {
+  color: white;
+}
+
+footer .navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: #FFA800;
+  transition: 0.3s linear;
+}
+
+footer .social-links svg {
+  cursor: pointer;
+}
+
+footer .social-linls svg path:hover {
+  fill: var(--blue);
+  transition: 0.3s linear;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(229deg 31% 21% / 80%);
+}
