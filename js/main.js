@@ -11,9 +11,10 @@ menuBtn.onclick = function () {
     setTimeout(() => {
       document.querySelectorAll('header .collapse ul li a').forEach(el => {
         el.addEventListener('click', () => {
-          menuBtn.classList.remove('active')
-          overlay.remove()
-          document.querySelector('.collapse').classList.remove('show')
+          menuBtn.classList.remove('active');
+          overlay.remove();
+          document.querySelector('.collapse').classList.remove('show');
+          document.querySelector("header svg").classList.remove("active");
         })
       });
     }, 500);
