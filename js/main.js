@@ -26,3 +26,14 @@ menuBtn.onclick = function () {
     }, 500);
   }
 };
+
+let number = 2240;
+document.getElementById("counter").textContent = number.toLocaleString();
+let countup = setInterval(() => {
+    number++;
+    document.getElementById("counter").textContent = number.toLocaleString();
+    if (number >= 2291) {
+      clearInterval(countup);
+    }
+}, 100);
+
