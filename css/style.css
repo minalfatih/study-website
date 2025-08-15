@@ -125,6 +125,47 @@ header nav .download-btn a:hover {
   }
 }
 
+.landing .assess h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -1px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.landing .assess p {
+  color: #7e7e7fae;
+  font-size: 12px;
+}
+
+.landing .assess .info {
+  position: relative;
+}
+
+.landing .assess img {
+  width: 100px;
+}
+
+.landing .assess .info::after {
+  content: "";
+  position: absolute;
+  top: 137%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--black);
+}
+
+@media (min-width: 767px) {
+  .landing .assess .info::after {
+    top: 20%;
+    left: -10%;
+    width: 2px;
+    height: 40px;
+  }
+}
+
 section .info h1 {
   color: var(--blue);
   font-size: 50px;
