@@ -1,6 +1,8 @@
 :root {
   --blue: #0066ff;
   --black: #000;
+  --light-gray: #f9fafc;
+  --orange: #FFA800;
 }
 
 html {
@@ -39,7 +41,7 @@ header nav .navbar-nav .nav-item .nav-link {
 }
 
 header nav .navbar-nav .nav-item .nav-link:hover {
-  color: #FFA800;
+  color: var(--orange);
   transition: 0.3s linear;
 }
 
@@ -86,6 +88,15 @@ header nav .download-btn a:hover {
   header button.active div .hamburger {
     opacity: 0;
   }
+  
+  header .hamburger {
+    width: 30px;
+    height: auto;
+  }
+  
+  header .hamburger.active path {
+    fill: #fff;
+  }
 
   header button div .close {
     opacity: 0;
@@ -113,7 +124,7 @@ header nav .download-btn a:hover {
   }
 
   header nav .navbar-nav .nav-item .nav-link:hover {
-    color: #FFA800;
+    color: var(--orange);
     font-weight: bold;
   }
 
@@ -123,6 +134,37 @@ header nav .download-btn a:hover {
     padding: 15px;
     margin-top: 10px;
   }
+}
+
+section .info h1 {
+  color: var(--blue);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  section .info h1 {
+    font-size: 30px;
+  }
+}
+
+section .info p {
+  color: #777e88;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.landing h1 {
+  color: #111827 !important;
+}
+
+.landing h1 span:first-child {
+  color: var(--blue);
+}
+
+.landing h1 span:last-child {
+  color: var(--orange);
 }
 
 .landing .assess h4 {
@@ -166,24 +208,6 @@ header nav .download-btn a:hover {
   }
 }
 
-section .info h1 {
-  color: var(--blue);
-  font-size: 50px;
-  font-weight: 700;
-}
-
-@media (max-width: 990px) {
-  section .info h1 {
-    font-size: 30px;
-  }
-}
-
-section .info p {
-  color: var(--black);
-  line-height: 1.5;
-  font-size: 18px;
-}
-
 .feature {
   background-color: var(--blue);
   color: #f9fafb;
@@ -206,9 +230,26 @@ section .info p {
 .feature .box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding: 0;
   justify-content: center;
+}
+
+.students ul li {
+  background-color: var(--light-gray);
+  padding: 30px;
+  border-radius: 6px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0px 3px 5px 0px #00000010;
+}
+
+@media (min-width: 1200px) {
+  .students ul li {
+    width: 400px;
+    height: 140px;
+    padding: 20px;
+  }
 }
 
 .students ul li div h3 {
@@ -216,8 +257,12 @@ section .info p {
 }
 
 @media (max-width: 990px) {
-  .download img {
-    width: 50%;
+  .download .image img {
+    width: 60%;
+  }
+  
+  .feature .box img {
+    width: 80%;
   }
 
   .students > .image img {
@@ -234,6 +279,10 @@ section .info p {
   cursor: pointer;
 }
 
+.about {
+  background-color: var(--light-gray);
+}
+
 footer {
   background-color: var(--blue);
   color: #f9fafb;
@@ -243,17 +292,22 @@ footer h1 {
   font-weight: 700;
 }
 
-footer .logo {
-  width: 150px;
+footer p {
+  line-height: 1.6;
+}
+
+footer .logo .icon {
+  width: 100px;
+  height: auto;
   position: relative;
-  right: 7.5%;
+  right: 0%;
 }
 
 footer .content-btn a {
   display: block;
-  background-color: #FFA800;
+  background-color: var(--orange);
   color: white;
-  border: 1px solid #FFA800;
+  border: 1px solid var(--orange);
   text-decoration: none;
   padding: 15px;
   width: 150px;
@@ -262,7 +316,7 @@ footer .content-btn a {
 }
 
 footer .content-btn a:hover {
-  color: #FFA800;
+  color: var(--orange);
   background-color: white;
 }
 
@@ -271,7 +325,7 @@ footer .navbar .navbar-collapse .nav-item .nav-link {
 }
 
 footer .navbar .navbar-collapse .nav-item .nav-link:hover {
-  color: #FFA800;
+  color: var(--orange);
   transition: 0.3s linear;
 }
 
@@ -282,6 +336,13 @@ footer .social-links svg {
 footer .social-linls svg path:hover {
   fill: var(--blue);
   transition: 0.3s linear;
+}
+
+footer .copyeight-text {
+  border-top: 1px solid #d2d2d2cd;
+  text-align: center;
+  color: #d2d2d2cd;
+  font-size: 14px;
 }
 
 .overlay {
